@@ -1,0 +1,30 @@
+#hero {
+  position: relative;
+  & .ellipse {
+    & img {
+      width: 100%;
+    }
+  }
+  & .patins {
+    & img {
+      width: 80%;
+    }
+  }
+  & .patins {
+    position: absolute;
+    inset: 0;
+    border: solid red;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  & .star1 {
+    top: 38.3%;
+  }
+
+  & .star2 {
+    top: 60%;
+    left: 100%;
+  }
+}
