@@ -1,8 +1,9 @@
 .container{
   margin-inline: auto;
   padding-inline: 1.5rem;
-  width: 100%;
-  border: solid red;
+  width: min(375px), 100%;
+  
+
 }
 
 

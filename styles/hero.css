@@ -1,30 +1,35 @@
 #hero {
-  position: relative;
-  & .ellipse {
-    & img {
-      width: 100%;
-    }
-  }
-  & .patins {
-    & img {
-      width: 80%;
-    }
-  }
-  & .patins {
-    position: absolute;
-    inset: 0;
+  display: grid;
+  gap: 32px;
+
+  & .hero-img {
+    width: 100%;
+    height: 312px;
     border: solid red;
-    img{
+    position: relative;
+
+    & img[src*="Ellipse"] {
+      width: 94%;
+      left: 3%;
+      position: absolute;
+    }
+    & img[src*="patins"] {
       width: 100%;
       height: auto;
+      position: absolute;
+    
     }
-  }
-  & .star1 {
-    top: 38.3%;
-  }
 
-  & .star2 {
-    top: 60%;
-    left: 100%;
+    & img[src*="Stars 1"] {
+      width: 3.5rem;
+      position: absolute;
+      top: 30%;
+    }
+    & img[src*="Stars 2"] {
+      width: 1.625rem;
+      position: absolute;
+      bottom: 35%;
+      right: 0;
+    }
   }
 }
