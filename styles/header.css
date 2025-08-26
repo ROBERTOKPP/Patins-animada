@@ -1,13 +1,12 @@
 header {
-    justify-content: space-between;
-    padding-block: .75rem;
-    margin: 1rem;
-    & img[src*="logo"]:hover{
-        transform: rotate(90deg);
-        transition: linear 100ms;
-        animation: move 5s;
-    }
+  justify-content: space-between;
+  padding-block: 0.75rem;
+  margin: 1rem;
+  & img[src*="logo"]{
+    transition: transform 1s;
+  }
+  & img[src*="logo"]:hover {
+    transform: rotate(90deg);
+  }
 }
-@keyframes move{
-    to {}
-}
+

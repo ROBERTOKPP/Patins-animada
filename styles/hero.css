@@ -5,8 +5,8 @@
   & .hero-img {
     width: 100%;
     height: 312px;
-    border: solid red;
     position: relative;
+    border: solid red;
 
     & img[src*="Ellipse"] {
       width: 94%;
@@ -33,3 +33,4 @@
     }
   }
 }
+
