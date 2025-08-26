@@ -16,9 +16,7 @@
       width: 100%;
       height: auto;
       position: absolute;
-    
     }
-
     & img[src*="Stars 1"] {
       width: 3.5rem;
       position: absolute;
@@ -33,3 +31,20 @@
   }
 }
 
+.tittle {
+  position: relative;
+  
+  
+  & .flip {
+    border: solid red;
+    width: 10rem;
+    height: 2.31rem;
+    /* overflow-x: hidden; */
+    /* position: absolute;
+    bottom: 0;
+    left: 25%; */
+    font: 600 2rem/1.30 "syne";
+    
+  }
+
+}
