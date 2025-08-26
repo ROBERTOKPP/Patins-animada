@@ -1,14 +1,12 @@
 #btn {
   display: flex;
-  gap: 3rem;
-  border: solid red;
+  gap: 1.5rem;
 }
 button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  padding: 1.5rem 3rem;
+  justify-content: left;
+  gap: 0.75rem;
   border-radius: 999px;
   border: none;
   text-transform: uppercase;
@@ -19,14 +17,29 @@ button {
   }
 }
 .box-shadow {
-  box-shadow: 2px 10px 20px 2px #00000033;
+  box-shadow: 2px 5px 10px 2px #00000017,
+  2px 10px 20px 2px #00000017,
+  2px 15px 25px 2px #00000017;
 }
 
 & .btn-primary {
   border: none;
   background-color: var(--background);
+  & div{
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   & img {
-    border: solid red;
     border-radius: 50%;
   }
+}
+
+& .btn-secondary {
+  padding: 1.5rem 3rem;
+  justify-content: center;
+  gap: 0.75rem;
 }
