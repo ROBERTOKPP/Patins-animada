@@ -20,6 +20,8 @@
 --snitap-joy-mid: #DB2777;
 --snitap-joy-light: #F472B6;
 --snitap-leaf-mid: #16A34A;
+
+--ff-montserrat: "Montserrat", sans-serif;
 }
 
 body{
@@ -28,4 +30,7 @@ body{
 
 h1, h2{
   font: 600 2rem/1.25 "syne";
+}
+button{
+  font: 500 1rem/1.5 var(--ff-montserrat);
 }
