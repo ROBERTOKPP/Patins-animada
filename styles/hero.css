@@ -32,19 +32,54 @@
 }
 
 .tittle {
-  position: relative;
-  
-  
-  & .flip {
-    border: solid red;
-    width: 10rem;
-    height: 2.31rem;
-    /* overflow-x: hidden; */
-    /* position: absolute;
-    bottom: 0;
-    left: 25%; */
-    font: 600 2rem/1.30 "syne";
-    
+  width: 100%;
+  & h1 div {
+    display: inline-block;
+    overflow-x: hidden;
+    height: 2.5rem;
+    width: min-content;
+    vertical-align: bottom;
   }
 
+  & h1 span:nth-child(1) {
+    color: var(--snitap-sky-mid);
+  }
+  & h1 span:nth-child(2) {
+    color: var(--snitap-joy-mid);
+  }
+  & h1 span:nth-child(3) {
+    color: var(--snitap-leaf-mid);
+  }
+  & h1 span:nth-child(4) {
+    color: var(--snitap-sky-mid);
+  }
+
+  & h1 span {
+    display: block;
+    animation: slideup 6s infinite;
+  }
+}
+
+@keyframes slideup {
+  0%,
+  22% {
+    transform: translateY(0);
+  }
+  23% {
+    transform: translateY(calc(-2.5rem - 7.5px));
+  }
+  25% {
+    transform: translateY(calc(-2.5rem + 5px));
+  }
+  33%,
+  55% {
+    transform: translateY(-2.5rem);
+  }
+  66%,
+  88% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(-7.5rem);
+  }
 }
