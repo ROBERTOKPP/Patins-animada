@@ -69,17 +69,33 @@
     transform: translateY(calc(-2.5rem - 7.5px));
   }
   25% {
-    transform: translateY(calc(-2.5rem + 5px));
+    transform: translateY(calc(-2.5rem + 7.5px));
   }
+
+  /* -------------------------------- */
+
   33%,
   55% {
     transform: translateY(-2.5rem);
   }
+  56% {
+    transform: translateY(calc(-5rem - 7.5px));
+  }
+  58% {
+    transform: translateY(calc(-5rem + 7.5px));
+  }
+
+  /* -------------------------------- */
+
+
   66%,
   88% {
     transform: translateY(-5rem);
   }
+
+
+
   100% {
-    transform: translateY(-7.5rem);
+    transform: translateY(-7.5rem); 
   }
 }
