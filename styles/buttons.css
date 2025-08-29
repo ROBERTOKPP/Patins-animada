@@ -12,6 +12,7 @@ button {
   text-transform: uppercase;
   background-color: var(--snitap-sun);
   transition: transform 200ms linear;
+  color: #000000;
   & img {
     width: 1.5rem;
     height: 1.5rem;

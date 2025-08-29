@@ -63,6 +63,7 @@
     overflow-x: hidden;
     height: 2.5rem;
     width: min-content;
+    max-width: 336px;
     vertical-align: bottom;
   }
 
