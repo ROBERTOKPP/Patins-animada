@@ -1,38 +1,63 @@
 #hero {
   display: grid;
   gap: 32px;
+  padding-block: 1rem 3rem;
 
   & .hero-img {
     width: 100%;
-    height: 312px;
+    height: 350px;
     position: relative;
 
     & img[src*="Ellipse"] {
       width: 94%;
       left: 3%;
       position: absolute;
+      animation:patins 3s both;
+      animation-delay: 0.2s;
     }
     & img[src*="patins"] {
       width: 100%;
       height: auto;
       position: absolute;
+      animation:patins 3s both;
     }
     & img[src*="Stars 1"] {
       width: 3.5rem;
       position: absolute;
       top: 30%;
+      animation:patins 3s both;
     }
     & img[src*="Stars 2"] {
       width: 1.625rem;
       position: absolute;
       bottom: 35%;
       right: 0;
+      animation:patins 3s both;
     }
   }
 }
 
+@keyframes patins {
+  0%{
+    transform: translateX(25rem);
+  }
+  50%{
+    transform: translateX(0);
+  }
+
+  50%{
+    transform: translateX(calc(-5px));
+  }
+  70%{
+    transform: translateX(calc(5px));
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
 .tittle {
-  width: 100%;
+  width: 21rem;
   & h1 div {
     display: inline-block;
     overflow-x: hidden;
@@ -57,6 +82,7 @@
   & h1 span {
     display: block;
     animation: slideup 6s infinite;
+    animation-delay: 2s;
   }
 }
 
@@ -78,6 +104,7 @@
   55% {
     transform: translateY(-2.5rem);
   }
+
   56% {
     transform: translateY(calc(-5rem - 7.5px));
   }
@@ -87,15 +114,20 @@
 
   /* -------------------------------- */
 
-
   66%,
   88% {
     transform: translateY(-5rem);
   }
 
-
+  89% {
+    transform: translateY(calc(-7.5rem - 7.5px));
+  }
+  
+   91% {
+    transform: translateY(calc(-7.5rem + 7.5px));
+  }
 
   100% {
-    transform: translateY(-7.5rem); 
+    transform: translateY(-7.5rem);
   }
 }

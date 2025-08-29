@@ -1,7 +1,7 @@
 .container{
   margin-inline: auto;
   padding-inline: 1.5rem;
-  width: min(375px), 100%;
+  width: min(300px), 100%;
 }
 
 .flex{

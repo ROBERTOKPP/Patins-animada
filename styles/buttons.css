@@ -11,12 +11,17 @@ button {
   border: none;
   text-transform: uppercase;
   background-color: var(--snitap-sun);
+  transition: transform 200ms linear;
   & img {
     width: 1.5rem;
     height: 1.5rem;
   }
+  &:hover{
+    transform: scale(1.05);
+  }
 }
-.box-shadow {
+
+& .box-shadow {
   box-shadow: 2px 5px 10px 2px #00000017,
   2px 10px 20px 2px #00000017,
   2px 15px 25px 2px #00000017;

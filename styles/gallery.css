@@ -1,0 +1,43 @@
+#photo-gallery {
+  & .header-photo {
+    text-align: center;
+    padding-block: 1.5rem;
+    & span {
+      text-transform: uppercase;
+      font: 500 0.75rem/1.5 var(--ff-montserrat);
+    }
+  }
+
+  & .gallery {
+    
+    & figure > img {
+      width: 100%;
+      height: 16rem;
+      border-radius: 2.5rem;
+    }
+    & figure {
+      position: relative;
+      overflow-x: hidden;
+    }
+    & figcaption {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: absolute;
+      
+      width: 100%;
+      bottom: 0;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.23) 100%
+      );
+      & img {
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+      }
+    }
+  }
+}

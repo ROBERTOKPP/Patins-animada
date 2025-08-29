@@ -31,6 +31,7 @@ body{
 h1, h2{
   font: 600 2rem/1.25 "syne";
 }
+
 button{
   font: 500 1rem/1.5 var(--ff-montserrat);
 }

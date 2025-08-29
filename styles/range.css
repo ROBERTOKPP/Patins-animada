@@ -1,0 +1,29 @@
+#range {
+  overflow: hidden;
+  animation: range-color 8s linear infinite;
+  margin-block: 1.5rem;
+  & .range-rolling {
+    padding-block: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    font: 600 1.25rem/1.5 var(--ff-montserrat);
+    animation: range 3s linear infinite;
+  }
+}
+
+@keyframes range-color {
+  0% {
+    background-color: var(--snitap-joy-light);
+  }
+  50% {
+    background-color: var(--snitap-sky-light);
+  }
+  100% {
+    background-color: var(--snitap-joy-light);
+  }
+}
+@keyframes range {
+  to {
+    transform: translateX(-127px);
+  }
+}
