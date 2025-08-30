@@ -66,7 +66,7 @@
 
 @keyframes patins {
   0% {
-    transform: translateX(25rem);
+    transform: translateX(200rem);
   }
   50% {
     transform: translateX(0);
@@ -119,34 +119,40 @@
     & h1 div {
       height: 5rem;
       max-width: 40rem;
+      overflow-y: hidden;
+    }
+    & h1 span {
+      display: block;
+      animation: slideup-desktop 6s infinite;
+      animation-delay: 2s;
     }
   }
 
-  @keyframes slideup {
+  @keyframes slideup-desktop {
     0%,
     22% {
       transform: translateY(0);
     }
-    /* 23% {
-    transform: translateY(calc(-5rem - 7.5px));
-  }
-  25% {
-    transform: translateY(calc(-5rem + 7.5px));
-  } */
+    23% {
+      transform: translateY(calc(-5rem - 7.5px));
+    }
+    25% {
+      transform: translateY(calc(-5rem + 7.5px));
+    }
 
     /* -------------------------------- */
 
     33%,
     55% {
-      transform: translateY(-10rem);
+      transform: translateY(-5rem);
     }
 
-    /* 56% {
-    transform: translateY(calc(-10rem - 7.5px));
-  }
-  58% {
-    transform: translateY(calc(-10rem + 7.5px));
-  } */
+    56% {
+      transform: translateY(calc(-10rem - 7.5px));
+    }
+    58% {
+      transform: translateY(calc(-10rem + 7.5px));
+    }
 
     /* -------------------------------- */
 
@@ -155,13 +161,13 @@
       transform: translateY(-10rem);
     }
 
-    /* 89% {
-    transform: translateY(calc(-15rem - 7.5px));
-  }
-  
-   91% {
-    transform: translateY(calc(-15rem + 7.5px));
-  } */
+    89% {
+      transform: translateY(calc(-15rem - 7.5px));
+    }
+
+    91% {
+      transform: translateY(calc(-15rem + 7.5px));
+    }
 
     100% {
       transform: translateY(-15rem);
