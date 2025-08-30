@@ -1,7 +1,16 @@
 #btn {
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
+
+@media (width >= 80em) {
+  #btn {
+    flex-direction:row-reverse;
+    justify-content: flex-end;
+  }
+}
+
 button {
   display: flex;
   align-items: center;
@@ -17,21 +26,20 @@ button {
     width: 1.5rem;
     height: 1.5rem;
   }
-  &:hover{
+  &:hover {
     transform: scale(1.05);
   }
 }
 
 & .box-shadow {
-  box-shadow: 2px 5px 10px 2px #00000017,
-  2px 10px 20px 2px #00000017,
-  2px 15px 25px 2px #00000017;
+  box-shadow: 2px 5px 10px 2px #00000017, 2px 10px 20px 2px #00000017,
+    2px 15px 25px 2px #00000017;
 }
 
 & .btn-primary {
   border: none;
   background-color: var(--background);
-  & div{
+  & div {
     height: 4.5rem;
     width: 4.5rem;
     border-radius: 50%;

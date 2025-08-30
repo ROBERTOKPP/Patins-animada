@@ -38,3 +38,13 @@ footer {
     }
   }
 }
+
+@media (width >= 80em) {
+  & .f-col {
+    flex-direction: row;
+  }
+
+  footer {
+    justify-content: space-between;
+  }
+}

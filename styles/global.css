@@ -35,3 +35,9 @@ h1, h2{
 button{
   font: 500 1rem/1.5 var(--ff-montserrat);
 }
+
+@media  (width >= 80em){
+  h1, h2{
+  font: 600 4rem/1.25 "syne";
+}
+}

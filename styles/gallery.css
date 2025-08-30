@@ -65,3 +65,35 @@
     }
   }
 }
+
+@media (width >= 80em) {
+  #photo-gallery {
+    & .gallery {
+      display: grid;
+      grid-template-areas:
+        "a b b"
+        "c c d";
+
+      & :nth-child(1) {
+        grid-area: a;
+      }
+      & :nth-child(2) {
+        grid-area: b;
+      }
+      & :nth-child(3) {
+        grid-area: c;
+      }
+      & :nth-child(4) {
+        grid-area: d;
+      }
+    }
+
+    & .gallery {
+      & figure {
+        & img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
